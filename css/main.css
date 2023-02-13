@@ -1,0 +1,725 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline-style: none;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#sec-1 {
+    background-color: #ffcb0f;
+    padding: 15px;
+}
+#sec-1 #info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#sec-1 #icon {
+    text-align: center;
+}
+#sec-1 a {
+    text-decoration: none;
+    color: #000;
+}
+#info a {
+    margin-bottom: 10px;
+}
+#icon a {
+    margin-left: 10px;
+}
+
+#mainMenu {
+    background-color: #222533;
+    padding: 10px 0;
+}
+#mainMenu header h2 {
+    text-transform: uppercase;
+    color: #FFF;
+    font-style: italic;
+}
+#mainMenu header span {
+    color: #ffcb0f;
+}
+#mainMenu header p {
+    color: #FFF;
+    font-size: 14px;
+}
+#mainMenu label {
+	border: thin solid #ffcb0f;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0 3px;
+}
+#mainMenu label i {
+    color: #FFF;
+}
+#mainMenu .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+#mainMenu a{
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 0.9rem;
+	transition: all 0.6s ease;
+}
+#mainMenu div>a{
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: thin dotted #fff;
+}
+#mainMenu div a:hover{
+	background-color: #ffcb0f;
+    border-radius: 10px;
+}
+#MenuControl {
+	display: none;
+}
+#MenuControl+div {
+	display: none;
+	width: 100%;
+}
+#MenuControl:checked+div {
+	display: block;
+}
+#sec-2 {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url(../images/banner.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+#sec-2 h4{
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#sec-2 h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+#sec-2 h3{
+    color: #ffcb0f;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#sec-2 p {
+    text-align: justify;
+    margin-bottom: 50px;
+}
+#sec-2 .links{
+    text-align: center;
+}
+#sec-2 div a {
+    text-decoration: none;
+    background-color: #000;
+    color: #ffcb0f;
+    display: inline-block;
+    border: thin solid #ffcb0f;
+    font-weight: bold;
+    width: 150px;
+    padding: 15px;
+}
+
+#sec-3 {
+    text-align: center;
+}
+#sec-3 h2 {
+    color: #ffcb0f;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+#sec-3 p{
+    text-align: justify;
+}
+#sec-3 div img {
+    width: 100%;
+}
+#sec-3 a {
+    text-decoration: none;
+    background-color: #ffcb0f;
+    color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 150px;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sec-4 {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/bg4.jpg) no-repeat center center/cover;
+    color: #FFF;
+    padding:40px 0 30px 0;
+}
+#sec-4 div>h2{
+    color: #ffcb0f;
+    text-align: center;
+    text-transform: uppercase;
+}
+#sec-4 div>p {
+	margin-top: 10px;
+}
+#sec-4 #image {
+    position: relative;
+    background-color: #ffcb0f;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+}
+#sec-4 img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#sec-4 figure {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+#sec-4 figcaption {
+    margin-top: -25px;
+    text-align: center;
+}
+#sec-4 figcaption h3{
+	color: #FABF1F;
+	margin-bottom: 15px;
+	font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+#sec-5 {
+    padding: 50px 0 60px 0;
+    text-align: center;
+}
+#sec-5 h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+#sec-5 div {
+    position: relative;
+}
+#sec-5 img {
+    width: 100%;
+}
+#sec-5 h3 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    bottom: 5px;
+    width:100%;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+#sec-5 figcaption>p {
+    margin: 20px 0;
+    text-align: justify;
+}
+#sec-5 figcaption>a {
+    text-decoration: none;
+    background-color: #ffcb0f;
+    color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 160px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sec-6 {
+    background:linear-gradient(rgba(102, 102, 102, 0.7),rgba(102, 102, 102, 0.7)), url(../images/bg2.jpg) 
+    no-repeat center center/cover;
+    text-align: center;
+    padding: 50px 0;
+    color: #dededd;
+}
+#sec-6 h2 {
+    text-transform: uppercase;
+    color: #fff;
+}
+#sec-6 div.container>p {
+    margin: 20px 0;
+}
+
+#sec-6 #links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #dededd;
+    display: block;
+    width: 100%;
+    padding:5px 5px;
+    border-radius: 100px;
+    margin:10px 0;
+}
+#sec-6 #links a:hover{
+    background-color: #181818;
+}
+#sec-6 figure{
+    margin-top: 40px;
+}
+#sec-6 figure img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#sec-7 {
+    background: url(../images/bg3.jpg) no-repeat center center/cover;
+    padding: 40px 0;
+    text-align: center;
+}
+#sec-7 h2 {
+    text-transform: uppercase;
+}
+#sec-7 div.container>p {
+    margin: 20px 0;
+}
+#sec-7 article {
+    display: flex;
+    flex-wrap: wrap;
+}
+#sec-7 #art-2 div:first-child{
+    background-color: #ffcb0f;
+    color: #fff;
+}
+#sec-7 article div:first-child {
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #e5e5e5;
+    padding: 40px;
+}
+#sec-7 article div:first-child>p {
+    text-align: justify;
+    margin-left: 5px;
+}
+#sec-7 article div:last-child{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+#sec-7 article div:last-child img:nth-child(2) {
+    border-radius: 50%;
+    margin: 10px 0;
+}
+#sec-7 article h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#sec-8 {
+    background-color: #fedb5d;
+    padding: 20px 0;
+    text-align: center;
+    color: #73757e;
+}
+#sec-8 h3{
+    text-transform: uppercase;
+}
+#sec-8 p{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#sec-8 form {
+    padding: 20px;
+}
+#sec-8 form *{
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 10px ;
+}
+#sec-8 form button {
+    background-color:#73757e;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer {
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(../images/bg4.jpg) no-repeat center center/cover;
+    padding: 40px;
+    color: #fff;
+}
+footer h4{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-top: 15px;
+}
+footer article:first-of-type div {
+    margin: 20px 0;
+}
+footer article:first-of-type div>h3 {
+    color: #ffcb0f;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+footer article:first-of-type div>p {
+    color: #b0b0b0;
+    line-height: 0.5;
+}
+footer article:first-of-type>p {
+    margin-bottom: 20px;
+}
+footer article:first-of-type a>i {
+    background-color: #ffcb0f;
+    color: #000;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+footer article:nth-of-type(2) ul{
+    list-style: none;
+}
+footer article:nth-of-type(2) ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+footer article:nth-of-type(2) ul li i {
+    margin-right: 15px;
+}
+footer article:nth-of-type(3) div{
+    border-radius: 50%;
+    border: 1px solid wheat ;
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+footer article:nth-of-type(3) section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+footer article:nth-of-type(3)h4{
+    flex-basis: 100%;
+}
+footer article:last-of-type a{
+    display: flex;
+    text-decoration: none;
+    color: #FFF;
+    margin-bottom: 15px;
+}
+footer article:last-of-type a i {
+    margin-right: 15px;
+}
+
+
+#sec-9 p{
+    padding: 30px 0 ;
+    text-align: center;
+    background-color: #222533;
+    color: #FFF;
+}
+#sec-9 p span {
+    color: #ffcb0f;
+}
+
+@media (min-width: 576px) {  
+    #sec-2 {
+        display: flex;
+        align-items: center;
+    }
+    #sec-2 h4{
+        font-size: 40px;
+    }
+    #sec-2 h2 {
+        font-size: 70px;
+    }
+    #sec-2 h3{
+        font-size: 70px;
+    }
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 920px;
+	}
+    #sec-1{
+        padding: 10px;
+    }
+    #sec-1 div.container {
+        display: flex;
+        justify-content: space-between;
+    }
+    #sec-1 #info{
+        flex-direction: row;
+    }
+    #info a {
+        margin-bottom: 0;
+    }
+    #info a:nth-child(2){
+        margin: 0 10px;
+    }
+    #mainMenu label {
+		display: none;
+	}
+    #MenuControl+div{
+		display: flex;
+		width: auto;
+	}
+    #mainMenu div>a {
+		border-style: none;
+		padding: 10px 20px;
+	}
+    #mainMenu div a:last-of-type {
+        padding: 0;
+        margin: 10px 0 10px 20px; 
+        color: #ffcb0f;
+    }
+    #mainMenu div a:last-of-type:hover {
+        background-color: #222533;
+    }
+    #sec-2 h2 {
+        line-height: 0.5;
+    }
+
+    #sec-3 {
+        text-align: left;
+    }
+    #sec-3 div.container{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #sec-3 article {
+        flex-basis: 58%;
+    }
+    #sec-3 div:last-child {
+        flex-basis: 40%;
+    }
+    #sec-3 h2 {
+        font-size: 37.5px;
+    }
+
+    #sec-4 div>h2 {
+        font-size: 1.6rem;
+    }
+    #sec-4 div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    #sec-4 div.container h2, 
+    #sec-4 div.container>p{
+        flex-basis: 100%;
+    }
+    #sec-4 figure {
+        flex-basis: 49%;
+    }
+
+    #sec-5 figure {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #sec-5 figure div {
+        flex-basis: 35%;
+    }
+    #sec-5 figure figcaption{
+        flex-basis: 60%;
+        text-align: right;
+    }
+
+    #sec-6 figure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-6 figure>img{
+        flex-basis: 70%;
+    }
+    #sec-6 figure aside{
+        flex-basis: 29%;
+    }
+
+    #sec-7 div.container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-7 div.container h2,
+    #sec-7 div.container>p {
+        flex-basis: 100%;
+    }
+    #sec-7 article {
+        flex-basis: 48%;
+    }
+
+    #sec-8 div.container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #sec-8 form .w-50{
+        flex-basis: 48.5%;
+    }
+    #sec-8 div.container div {
+        flex-basis: 49%;
+    }
+    #sec-8 form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-basis: 49%;
+    }
+    #sec-8 p {
+        margin-bottom: 0;
+    }
+
+    footer div.container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    footer div.container article {
+        flex-basis: 49%;
+    }
+}
+@media (min-width: 1200px) {  
+	.container {
+		max-width: 1140px;
+	}
+    #sec-3 h2 {
+        font-size: 46.5px;
+    }
+    #sec-4 figure {
+        flex-basis: 22%;
+    }
+
+    #sec-5 figure {
+        display: block;
+    }
+    #sec-5 div.container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #sec-5 div.container h2 {
+        flex-basis: 100%;
+    }
+    #sec-5 figure {
+        flex-basis: 30%;
+    }
+    #sec-5 figure figcaption{
+        flex-basis: 60%;
+        text-align: left;
+    }
+
+    #sec-6 #links a {
+    display: inline-block;
+    width: auto;
+    padding:5px 20px;
+    border-radius: 100px;
+    margin:10px 0 40px 15px
+    }
+    #sec-6 figure{
+        margin-top: 0;
+    }
+    #sec-6 figure img{
+        margin-bottom: 0;
+    }
+    #sec-6 figure>img{
+    flex-basis: 49%;
+    }
+    #sec-6 figure aside{
+    flex-basis: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    }
+    #sec-6 figure aside>img{
+    flex-basis: 49%;
+    }
+    
+    #sec-7 article {
+        flex-basis: 32%;
+    }
+    #sec-7 article h3{
+        margin-bottom: 0;
+    }
+
+    #sec-8 div.container {
+        align-items: stretch;
+    }
+    #sec-8 div.container div {
+        padding: 20px 0;
+        font-size: 1.5rem;
+    }
+    #sec-8 div.container div>p {
+        font-size: 2.2rem;
+    }
+    #sec-8 form .w-70{
+        flex-basis: 75%;
+    }
+    #sec-8 form .w-30{
+        flex-basis: 23%;
+    }
+
+    footer div.container article:first-of-type {
+        flex-basis: 34%;
+    }
+    footer div.container article:nth-of-type(2){
+        flex-basis: 15%;
+    }
+    footer div.container article:nth-of-type(3){
+        flex-basis: 24%;
+    }
+    footer div.container article:last-child {
+        flex-basis: 24%;
+    }
+    footer article:nth-of-type(3) section {
+        flex-basis: 20%;
+    }
+    footer article:nth-of-type(3) p {
+        flex-basis: 70%;
+    }
+}
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1340px;
+	}
+}
